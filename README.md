@@ -11,12 +11,15 @@ Once inside of your virtual environment type: pip install twilio.
 ## Add your Twilio creditials to a .env file
 
 Create a .env file and add your Twilio creditials as the environment variables TWILIO_PHONE_NUMBER, TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN
+Also add your email as the environment variable SENDER_EMAIL
 
 e.g. TWILIO_PHONE_NUMBER = '+1237891234'
 
-## Add the receipents phone number
+## Add your Sengrid API Key to a sendgrid.env file
 
-Also in your .env file add the phone number that you wish to call and message as environment variable MY_NUMBER.
+Create a sendgrid.env file and add your API Key for export.
+
+ 
 
 ## Create a WUPHF!
 
