@@ -1,12 +1,16 @@
 # Create a WUPHF!
 
-# Create a simultanous text message and phone call with wuphf.py.
+# Create a simultanous text message, email, and phone call with wuphf.py.
 
-## Requires python 3 and the twilio python helper library.
+## Requires python 3, the twilio python helper library, and sendgrid helper library.
 
-## Use pip to install the twilio package
+## Create your virtual environment (pipenv recommended).
+pipenv shell
 
-Once inside of your virtual environment type: pip install twilio.
+## Use pip or pipenv to install the twilio and sendgrid packages and their subdependiences.
+
+pipenv install twilio.
+pipenv install sendgrid.
 
 ## Add your Twilio creditials to a .env file
 
@@ -19,14 +23,18 @@ e.g. TWILIO_PHONE_NUMBER = '+1237891234'
 
 Create a sendgrid.env file and add your API Key for export.
 
- 
+e.g. export SENDGRID_API_KEY= 'YOUR API KEY'
 
-## Create a WUPHF!
 
-Navigate to the src folder and type: python wuphf.py.
+# Create a WUPHF!
 
-The terminal will then promept you to the enter the message that you wish to send.
+In the main WUPHF directory type: source ./sendgrid.env
 
-Congradulations you just sent a WUPHF!
+Next navigate to the src folder and type: python wuphf.py.
+
+The terminal will then promept you to the enter the message that you wish to send and the phone number and email that you are sending it to.
+A phone call will also begin.
+
+Congratulations you just sent a WUPHF!
 
  
